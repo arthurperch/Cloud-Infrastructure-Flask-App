@@ -62,5 +62,41 @@ def health():
 if __name__ == "__main__":
     # Start Flask server on port 80 (so browser can reach it)
     app.run(host="0.0.0.0", port=80)
+📐 Architecture Diagram
 
+The current cloud infrastructure is provisioned on AWS using Terraform. The deployment includes the following components:
+
+VPC (10.0.0.0/16) → A private network for all resources.
+
+Public Subnet (10.0.1.0/24) → A subnet inside the VPC with internet access.
+
+Internet Gateway (IGW) → Enables communication between the VPC and the internet.
+
+Route Table → Routes outbound traffic (0.0.0.0/0) through the IGW.
+
+Security Group → Configured to allow inbound HTTP (port 80) and SSH (port 22), with unrestricted outbound access.
+
+EC2 Instance (Amazon Linux 2) → A t3.micro instance running in the public subnet with a public IPv4 address.
+
+Current State
+
+Infrastructure fully deployed with Terraform.
+
+Public IP assigned to EC2 instance.
+
+Instance accessible via SSH (port 22).
+
+Security group allows HTTP (port 80).
+
+Flask application prepared locally for deployment.
+
+Next Step
+
+Deploy the Flask application onto the EC2 instance.
+
+Application endpoints will be exposed:
+
+/ → returns “Hello from cloud-p1 🚀”
+
+/health → returns “OK”
 <img width="2259" height="1661" alt="image" src="https://github.com/user-attachments/assets/bed0fa26-ccee-4f73-ab12-fc910142beb4" />
