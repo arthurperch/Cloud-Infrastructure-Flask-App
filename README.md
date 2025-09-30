@@ -2,6 +2,27 @@
 End-to-end AWS project: Terraform-deployed 3-tier Flask app with VPC, EC2, ALB, and RDS. Includes CI/CD (GitHub Actions + CodeDeploy), HTTPS/TLS, CloudWatch monitoring, IAM least privilege, WAF, and cost optimization. Features runbooks + incident logs for real-world ops workflows.
 
 
+edit "appy.py"
+Make changes: # Import Flask (tiny Python web framework)
+from flask import Flask
+
+# Create Flask app object
+app = Flask(__name__)
+
+# Define a route: when someone visits "/"
+@app.route("/")
+def home():
+    return "Hello from cloud-p1 🚀"
+
+# Health check endpoint for monitoring
+@app.route("/health")
+def health():
+    return "OK"
+
+# Run app only if script is executed directly
+if __name__ == "__main__":
+    # Start Flask server on port 80 (so browser can reach it)
+    app.run(host="0.0.0.0", port=80)
 
 
 What this does:
