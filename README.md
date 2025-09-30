@@ -62,3 +62,5 @@ def health():
 if __name__ == "__main__":
     # Start Flask server on port 80 (so browser can reach it)
     app.run(host="0.0.0.0", port=80)
+
+<img width="2259" height="1661" alt="image" src="https://github.com/user-attachments/assets/bed0fa26-ccee-4f73-ab12-fc910142beb4" />
