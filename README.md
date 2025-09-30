@@ -33,3 +33,32 @@ Binds to 0.0.0.0: Accepts connections from any IP (required for public access)
 Commands to test locally:cd app/
 python app.py
 # Visit: http://localhost:80 and http://localhost:80/health<img width="1530" height="1010" alt="Host HTTP testing port80" src="https://github.com/user-attachments/assets/2a0077f8-6b37-4390-8667-ab63239ec214" />
+
+SUMMARY:
+What Changed:
+Fixed typo: requirments.txt → requirements.txt
+Added /health endpoint returning "OK"
+Full File Contents:
+app.py
+
+
+# Import Flask (tiny Python web framework)
+from flask import Flask
+
+# Create Flask app object
+app = Flask(__name__)
+
+# Define a route: when someone visits "/"
+@app.route("/")
+def home():
+    return "Hello from cloud-p1 🚀"
+
+# Health check endpoint for monitoring
+@app.route("/health")
+def health():
+    return "OK"
+
+# Run app only if script is executed directly
+if __name__ == "__main__":
+    # Start Flask server on port 80 (so browser can reach it)
+    app.run(host="0.0.0.0", port=80)
