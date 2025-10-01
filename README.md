@@ -21,8 +21,8 @@ Visit:
 - [http://localhost:80](http://localhost:80)  
 - [http://localhost:80/health](http://localhost:80/health)  
 
-<img width="1530" height="1010" alt="Host HTTP testing port80" src="https://github.com/user-attachments/assets/2a0077f8-6b37-4390-8667-ab63239ec214" />
-
+### Flask Local Test  
+![Flask Local Test](screenshots/flask-local-test.png)
 ![compressedcloudp1cmdhostingtest](https://github.com/user-attachments/assets/06175844-5f28-41bc-bcf0-dbbea7eb19db)
 
 ---
@@ -36,8 +36,7 @@ Visit:
 <img width="2259" height="1661" alt="495527079-bed0fa26-ccee-4f73-ab12-fc910142beb4" src="https://github.com/user-attachments/assets/47b02ea4-8b0f-4602-94e1-6fa73aa97f60" />
 
 ---
-### Flask Local Test  
-![Flask Local Test](screenshots/flask-local-test.png)
+
 
 ### Terraform Apply Success  
 ![Terraform Apply](screenshots/terraform-apply-success.png)
