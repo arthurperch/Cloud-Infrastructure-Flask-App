@@ -1,4 +1,4 @@
-# cloud-p1  
+# Cloud Infrastructure with Flask App
 
 End-to-end AWS project deploying a 3-tier Flask application with Terraform.  
 Built to demonstrate real-world cloud engineering practices including Infrastructure as Code (IaC), application deployment, monitoring, and security hardening.  
