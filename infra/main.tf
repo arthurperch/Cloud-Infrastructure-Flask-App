@@ -65,6 +65,14 @@ resource "aws_security_group" "ec2_sg" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 
+  # Allow inbound SSH traffic on port 22
+  ingress {
+    from_port   = 22
+    to_port     = 22
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
   # Allow all outbound traffic (so server can reach internet)
   egress {
     from_port   = 0
@@ -78,6 +86,7 @@ resource "aws_security_group" "ec2_sg" {
 resource "aws_instance" "app" {
   ami           = "ami-024e4b8b6ef78434a" # Amazon Linux 2 image (free tier eligible)
   instance_type = "t3.micro"              # Free tier eligible
+  key_name      = "Cloud-p1-key"          # SSH key pair for access
   subnet_id     = aws_subnet.public.id
   vpc_security_group_ids = [aws_security_group.ec2_sg.id]
 

@@ -7,7 +7,12 @@ app = Flask(__name__)
 # Define a route: when someone visits "/"
 @app.route("/")
 def home():
-    return "Hello from cloud-p1 Flask app! 🚀"
+    return "Hello from cloud-p1 🚀"
+
+# Health check endpoint for monitoring
+@app.route("/health")
+def health():
+    return "OK"
 
 # Run app only if script is executed directly
 if __name__ == "__main__":
