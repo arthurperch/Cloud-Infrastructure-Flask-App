@@ -21,7 +21,9 @@ Built to demonstrate real-world cloud engineering practices including Infrastruc
 
 ### AWS EC2 instance running  
 ![EC2 Screenshot](<img-link>)  
-<img width="2048" height="1015" alt="ec2_screenshot_sanitized" src="https://github.com/user-attachments/assets/dcf94163-7733-46e0-8df2-bee5329ba02b" />
+<img width="2048" height="1031" alt="ec2_screenshot_blurred" src="https://github.com/user-attachments/assets/0b3aba1d-127a-488f-a580-a141d80d2f79" />
+
+
 
 ### Architecture diagram  
 <img width="2259" height="1661" alt="495527079-bed0fa26-ccee-4f73-ab12-fc910142beb4" src="https://github.com/user-attachments/assets/47b02ea4-8b0f-4602-94e1-6fa73aa97f60" />
