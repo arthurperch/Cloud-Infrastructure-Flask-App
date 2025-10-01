@@ -1,4 +1,4 @@
-# Cloud Infrastructure with Flask App
+# Cloud Infrastructure with Flask App  
 
 End-to-end AWS project deploying a 3-tier Flask application with Terraform.  
 Built to demonstrate real-world cloud engineering practices including Infrastructure as Code (IaC), application deployment, monitoring, and security hardening.  
@@ -16,36 +16,41 @@ Built to demonstrate real-world cloud engineering practices including Infrastruc
 
 ## 📸 Screenshots  
 
-### Local Flask App  
+### Terraform Deployment  
+Terraform successfully initialized and applied infrastructure.  
+![Terraform Apply](screenshots/terraform-apply-success.png)  
+
+---
+
+### AWS Setup  
+Configured AWS CLI and confirmed Free Tier eligibility.  
+![AWS Configure](screenshots/aws-configure.png)  
+![EC2 Free Tier Check](screenshots/ec2-free-tier-check.png)  
+
+---
+
+### EC2 Instance Running  
+EC2 instance provisioned successfully via Terraform.  
+<img width="2048" height="1031" alt="ec2_screenshot_blurred" src="https://github.com/user-attachments/assets/0b3aba1d-127a-488f-a580-a141d80d2f79" />  
+
+---
+
+### Flask Application (Local Test)  
+Tested Flask app locally with both endpoints.  
 Visit:  
 - [http://localhost:80](http://localhost:80)  
 - [http://localhost:80/health](http://localhost:80/health)  
 
-### Flask Local Test  
-![Flask Local Test](screenshots/flask-local-test.png)
-![compressedcloudp1cmdhostingtest](https://github.com/user-attachments/assets/06175844-5f28-41bc-bcf0-dbbea7eb19db)
-
----
-
-### AWS EC2 Instance Running  
-<img width="2048" height="1031" alt="ec2_screenshot_blurred" src="https://github.com/user-attachments/assets/0b3aba1d-127a-488f-a580-a141d80d2f79" />
+![Flask Local Test](screenshots/flask-local-test.png)  
+![Flask Local Test - Console/GIF](https://github.com/user-attachments/assets/06175844-5f28-41bc-bcf0-dbbea7eb19db)  
 
 ---
 
 ### Architecture Diagram  
-<img width="2259" height="1661" alt="495527079-bed0fa26-ccee-4f73-ab12-fc910142beb4" src="https://github.com/user-attachments/assets/47b02ea4-8b0f-4602-94e1-6fa73aa97f60" />
+High-level overview of the Terraform-provisioned AWS environment.  
+<img width="2259" height="1661" alt="Architecture Diagram" src="https://github.com/user-attachments/assets/47b02ea4-8b0f-4602-94e1-6fa73aa97f60" />  
 
 ---
-
-
-### Terraform Apply Success  
-![Terraform Apply](screenshots/terraform-apply-success.png)
-
-### AWS CLI Configure  
-![AWS Configure](screenshots/aws-configure.png)
-
-### EC2 Free Tier Check  
-![EC2 Free Tier Check](screenshots/ec2-free-tier-check.png)
 
 ## 🐍 Flask Application  
 
