@@ -13,8 +13,14 @@ Built to demonstrate real-world cloud engineering practices including Infrastruc
 - 🔄 Next: Deploy Flask app onto EC2 instance  
 
 ---
-
+Terraform / AWS Setup
 ## 📸 Screenshots  
+#Equal
+<img width="1357" height="312" alt="solution terraforms for free verson" src="https://github.com/user-attachments/assets/49148c83-6a38-4e0b-b5b3-9a14c3e809f4" />
+AWS CLI configure
+<img width="279" height="229" alt="Screenshot 2025-09-28 141022" src="https://github.com/user-attachments/assets/fa6987e4-4d93-4761-82e0-ef19b37226e6" />
+Free Tier eligibility
+<img width="654" height="74" alt="Screenshot 2025-09-28 141800" src="https://github.com/user-attachments/assets/ac90ef4e-d518-49f3-a423-2f05acef8975" />
 
 ### Terraform Deployment  
 Terraform successfully initialized and applied infrastructure.  
